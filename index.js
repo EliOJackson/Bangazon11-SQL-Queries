@@ -15,10 +15,10 @@ INSERT INTO Album
 VALUES('25', 'Confessions', '3/23/2004', '7722', 'Arista', '30', '5')
 // Using the INSERT statement, add some songs that are on that album to the Song table.
 INSERT into Song
-VALUES (null, "SongName", 343, 2004,
-(SELECT genreid FROM album a WHERE title = "AblumTitle"),
-(Select artistid FROM album a WHERE title = "AAlbumTitle"),
-(SELECT albumid FROM album a WHERE title ="AlbumTitle"));
+VALUES (null, "Confessions Pt. 2", 349, 2004,
+(SELECT genreid FROM album a WHERE title = "Confessions"),
+(Select artistid FROM album a WHERE title = "Confessions"),
+(SELECT albumid FROM album a WHERE title ="Confessions"));
 
 
 // Write a SELECT query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the LEFT JOIN keyword sequence to connect the tables, and the WHERE keyword to filter the results to the album and artist you added. Here is some more info on joins that might help.
