@@ -47,11 +47,11 @@ ON song.albumid = album.albumid
 GROUP BY album.title
 
 // Write a SELECT statement to display how many songs exist for each artist. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
-SELECT count(song.songid) "song count", album.title Album
+SELECT count(song.songid) 'song count', artist.artistName Artist
 FROM song
-JOIN album
-ON song.albumid = album.albumid
-GROUP BY album.title
+JOIN Artist
+ON song.artistId = artist.artistId
+GROUP BY artist.artistName
 // Write a SELECT statement to display how many songs exist for each genre. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 
 // Using MAX() function, write a select statement to find the album with the longest duration. The result should display the album title and the duration.
