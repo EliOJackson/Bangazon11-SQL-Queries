@@ -28,7 +28,8 @@ LEFT JOIN album a
 ON s.albumid = a.albumid
 LEFT JOIN artist as b
 ON s.artistid = b.artistid
-WHERE s.albumid = (SELECT albumid from album WHERE title = "albumtitle")
+WHERE s.albumid = (SELECT albumid from album WHERE title = "Confessions")
+//
 or try this -
 WHERE b.artistname = "artistname"
 
