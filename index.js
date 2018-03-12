@@ -5,13 +5,14 @@
 
 // Query all of the entries in the Genre table
 SElECT * 
-FROM genre
-// Using the INSERT statement, add one of your favorite artists to the Artist table.
+FROM Genres
 
+// Using the INSERT statement, add one of your favorite artists to the Artist table.
+INSERT INTO Artist(ArtistId, ArtistName, YearEstablished)
+VALUES('30', 'Usher', '1994')
 // Using the INSERT statement, add one, or more, albums by your artist to the Album table.
-INSERT into Album
-Values 
-(SELECT artistId FROM artist WHERE artistName ="Artistname"), 4)
+INSERT INTO Album
+VALUES('25', 'Confessions', '3/23/2004', '7722', 'Arista', '30', '5')
 // Using the INSERT statement, add some songs that are on that album to the Song table.
 INSERT into Song
 VALUES (null, "SongName", 343, 2004,
